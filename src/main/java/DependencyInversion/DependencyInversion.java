@@ -41,7 +41,6 @@ public class DependencyInversion {
         NotificationService notificationService1 = new NotificationService(new EmailService());
         NotificationService notificationService2 = new NotificationService(new WhatsappService());
         NotificationService notificationService3 = new NotificationService(new SMSService());
-
         notificationService1.sendNotification("Hallo", "Hiba");
         notificationService2.sendNotification("Hallo", "Hiba");
         notificationService3.sendNotification("Hallo", "Hiba");
